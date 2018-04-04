@@ -1,0 +1,7 @@
+site_name: EOS-DOCS-CN
+pages:
+    - 主页: Mainpage.md
+    - 相关页面: relatedpage.md
+    - 模块: Modules.md
+
+theme: readthedocs
