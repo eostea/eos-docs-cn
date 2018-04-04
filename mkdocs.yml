@@ -1,6 +1,6 @@
 site_name: EOS-DOCS-CN
 pages:
-    - Home: index.md
+    - 首页: index.md
     - 相关页面: relatedpage.md
     - 模块: Modules.md
     - 命名空间: [{命名空间列表: namespaces/namespacelist.md},

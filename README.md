@@ -3,5 +3,5 @@ EOS中文文档
 
 # 运行
 ```bash
-mddocs serve
+mkdocs serve
 ```
