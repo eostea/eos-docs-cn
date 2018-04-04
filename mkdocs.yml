@@ -187,3 +187,5 @@ pages:
                     ]
               },{类型定义: files/filemembers/Typedefs.md},{变量: files/filemembers/Variables.md},
               ]}]
+
+theme: mkdocs
