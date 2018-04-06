@@ -14,6 +14,7 @@
 * [White Paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md/)
 * [Wiki](https://github.com/EOSIO/eos/wiki/)
 * [EOS 中文社区](https://eosfans.io)
+* [EOS 开发者指南](TUTORIAL.md)
 
 # 环境搭建
 * [自动构建脚本]()
