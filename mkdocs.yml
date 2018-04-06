@@ -1,0 +1,12 @@
+site_name: EOS官方文档中文版
+pages:
+    - 首页: index.md
+    - 相关页面: relatedpage.md
+    - 模块: Modules.md
+    - 命名空间: namespaces/namespacelist.md
+    - 类: Classes/classlist.md
+    - 文件: files/filelist.md
+
+    - 其他 : [{RPC 接口: API/group-eosiorpc.md}]
+
+theme: readthedocs
