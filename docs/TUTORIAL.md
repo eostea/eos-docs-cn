@@ -5,7 +5,7 @@
 
 
 
-本文翻译自 EOS.IO 开发者指南[英文版](https://github.com/EOSIO/eos/blob/0b40e0e86acf21be91dc020079bde55c4c6923fb/TUTORIAL.md)，如果有表述不一致的地方，以英文版本为准！
+本文翻译自 EOS.IO 开发者指南[英文版](https://github.com/EOSIO/eos/wiki/Tutorial-Getting-Started-With-Contracts)，如果有表述不一致的地方，以英文版本为准！
 
 
 
