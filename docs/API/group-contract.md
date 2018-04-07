@@ -1,0 +1,84 @@
+智能合约API
+---             
+
+指导编写一个EOSIO的智能合约
+
+模块
+----
+       
+> [Account API](API/group-accountapi.md)    
+查询账户数据的api.
+
+> [Chain API]()  
+查询链内部状态的api.
+
+> [Database API](/API/group-databaseapi.md)      
+存储和检索EOS.IO区块链的数据API根据以下广泛结构来组织数据.
+
+> [Math API](/API/group-mathapi.md)      
+定义常用的数学函数.
+
+> [Action API](/API/group-actionapi.md)      
+定义用于查询操作属性的API.
+
+> [Memory API]()      
+定义常用的记忆功能.
+
+> [Console API](/API/group-consoleapi.md)      
+使应用程序能够记录/打印文本消息.
+
+> [System API](/API/group-systemapi.md)      
+定义用于与系统级内部函数进行交互的API.
+
+> [Token API](/API/group-tokenapi.md)      
+定义用于与标准兼容的令牌消息和数据库表进行交互的ABI.
+
+> [Transaction API](/API/group_transactionapi.md)      
+定义用于发送事务和内联消息的API
+
+> [Builtin Types](/API/group-types.md)      
+指定typedefs和别名。
+
+
+# 详细描述
+##　背景
+
+EOS.IO合约（也称为应用程序）作为预编译的Web Assembly（又名WASM）部署到区块链中。 WASM使用LLVM和clang从C/C ++编译，这意味着您将需要C/C++的知识才能开发您的区块链应用程序。 尽管可以用C开发，但我们强烈建议所有开发人员使用EOS.IO C ++ API，它提供了更强大的类型安全性，并且通常更易于阅读。
+
+## 应用结构
+
+EOS.IO应用程序是围绕响应用户操作的事件（又名操作）处理程序设计的。 例如，用户可能会将令牌传输给其他用户。该事件可以被处理，并可能被发件人，收件人和货币应用程序本身拒绝。
+作为应用程序开发人员，您可以决定用户可以采取哪些操作以及可以或必须调用哪些处理程序来响应这些事件。
+
+## 入口点
+
+EOS.IO应用程序具有与传统应用程序中主要类似的应用程序：
+```C++
+extern "C" {
+   void init();
+   void apply( uint64_t code, uint64_t action );
+}
+```
+apply给出了唯一标识系统中每个事件的参数代码和操作。 例如，code可能是货币合约，action可能是转移。这个事件（code, action）可能被传递给包括发送者和接收者在内的多个合约。 由您的应用程序决定如何应对此类事件。
+
+init是加载代码后立即调用的另一个入口点。这是你应该执行一次状态初始化的地方。
+
+## 示例应用输入处理程序
+
+一般来说，你应该使用你的入门处理程序将事件分派给实现大部分逻辑的功能的函数，并该函数可选择拒绝合同无法或不愿意接受的事件。
+
+```c++
+extern "C" {
+   void apply( uint64_t code, uint64_t action ) {
+      if( code == N(currency) ) {
+         if( action == N(transfer) ) 
+            currency::apply_currency_transfer( current_action< currency::transfer >() );
+      } else {
+         eosio_assert( false, "rejecting unexpected event" );
+      }
+   }
+}
+```
+
+> 注意   
+     在定义入口点，需要将它们放置在extern“C”代码块中，以便c++名称修改不会应用于该函数。
