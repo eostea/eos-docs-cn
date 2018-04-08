@@ -1,15 +1,13 @@
-Transaction API
----
+# Transaction API
 
 定义用于发送事务和内联消息的API
-> [Transaction C API]()   
+## Transaction C API
 定义用于发送事务的API
 
-> [Transaction C++ API]()   
+## Transaction CPP API  
 类型安全的Trasaction C API的C++封装
 
-详细描述
----
+### 详细描述
 
 A EOS.IO事务具有以下抽象结构：
 ```C++

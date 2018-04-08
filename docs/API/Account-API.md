@@ -6,10 +6,10 @@
 模块
 ---
 
-> [Account C API]()   
+# Account C API   
 查询账户数据的c语言api.
 
-> [Account C++ API]()    
+# Account CPP API    
 查询账户数据的c++语言api.例子: account balance
 
 详细描述

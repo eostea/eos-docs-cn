@@ -1,16 +1,15 @@
-Database API
-----
+# Database API
 
 存储和检索EOS.IO区块链的数据API根据以下广泛结构来组织数据.
 
-模块
----
+# 模块
 
-> [Database C API]()    
+
+## Database C API    
  数据库的C语言接口.
 
-详细描述
----
+### 详细描述
+
 
 - code - 具有写入权限的帐户名称.
     - scope - 存储数据的帐户.

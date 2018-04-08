@@ -1,14 +1,13 @@
-Math API
----
+# Math API
 
 定义常用的数学函数.
 
-模块
----
-> [Math C API]()   
+# 模块
+
+## Math C API   
 定义使用更高抽象的基本数学运算.
 
-> [Math C++ API]()   
+## Math CPP API   
 定义常用的数学函数和帮助器类型.
 
 详细描述

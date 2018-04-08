@@ -1,12 +1,11 @@
-Console API
----
+# Console API
+
 使应用程序能够记录/打印文本消息.
 
-> [Console C API]()   
+## Console C AP   
  使应用程序能够记录/打印文本消息C语言API.
 
-> [Console C++ API]()   
+## Console CPP API   
  Console C API的C++封装.
  
-详细描述
----
+## 详细描述

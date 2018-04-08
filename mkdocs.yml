@@ -1,22 +1,6 @@
 site_name: EOS官方文档中文版
-pages:
-    - 首页: index.md
-    - 相关页面: relatedpage.md
-    - 模块: Modules.md
-    - 命名空间: namespaces/namespacelist.md
-    - 类: Classes/classlist.md
-    - 文件: files/filelist.md
 
-    - {其他 : [{RPC 接口: API/group-eosiorpc.md},
-    {智能合约API: API/group-contract.md},
-    {账户API: API/group-accountapi.md},
-    {Database API: API/group-databaseapi.md},
-    {Math API: API/group-mathapi.md},
-    {Action API: API/group-actionapi.md},
-    {Console API: API/group-consoleapi.md},
-    {System API: API/group-systemapi.md},
-    {Token API: API/group-tokenapi.md},
-    {Transaction API: API/group_transactionapi.md},
-    {Builtin Types: API/group-types.md}]}
+extra:
+    version: 3.0
 
-theme: mkdocs
+theme: readthedocs
