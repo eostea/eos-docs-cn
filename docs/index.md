@@ -1,16 +1,16 @@
 # 欢迎来到EOS.IO中文文档
 
-## 声明   
-#### EOS.IO中文文档由EOS中文社区翻译维护    
-##### 本文档正在更新中，并且由于快速更新可能会发生变化。 有翻译不准确的情况请在电报群联系[eos中文社区](https://t.me/eosfanscn)
+### 声明   
+>EOS.IO中文文档由EOS中文社区翻译维护    
+> 本文档正在更新中，并且由于快速更新可能会发生变化。 有翻译不准确的情况请在电报群联系[eos中文社区](https://t.me/eosfanscn)
 
-# EOS.IO
+### EOS.IO
 
 * [EOS 中文社区](https://eosfans.io)
 * [开发者指南](https://github.com/eosfansio/eos-tutorials)
 * [其他资源](https://github.com/eosfansio)
 
-# 智能合约开发
+### 智能合约开发
 * [RPC接口](API/EOSIO-RPC.md)
 * [智能合约API参考](智能合约.md)
     * [Account API](API/Account-API.md) - 查询账户数据的api.
