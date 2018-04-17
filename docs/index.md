@@ -1,10 +1,13 @@
 # 欢迎来到EOS.IO中文文档
 
 ### 声明   
->EOS.IO中文文档由EOS中文社区翻译维护    
-> 本文档正在更新中，并且由于快速更新可能会发生变化。 有翻译不准确的情况请在电报群联系[eos中文社区](https://t.me/eosfanscn)
+
+EOS.IO中文文档由EOS中文社区翻译维护，本文档正在更新中，并且由于快速更新可能会发生变化。 有翻译不准确的情况请在电报群联系[eos中文社区](https://t.me/eosfanscn).
 
 ### EOS.IO
+* [EOS github Readme](https://github.com/EOSIO/eos#readme)
+
+### EOS中文
 
 * [EOS 中文社区](https://eosfans.io)
 * [开发者指南](https://github.com/eosfansio/eos-tutorials)
@@ -22,5 +25,5 @@
     * [Console API](API/Console-API.md) - 使应用程序能够记录/打印文本消息.
     * [System API](API/System-API.md) - 定义用于与系统级内部函数进行交互的API.
     * [Token API](API/Token-API.md) - 定义用于与标准兼容的令牌消息和数据库表进行交互的ABI.
-    * [Transaction API](API/Transaction-API.md) - 定义用于发送事务和内联消息的API
-    * [Builtin Types](API/Types.md) - 指定typedefs和别名
+    * [Transaction API](API/Transaction-API.md) - 定义用于发送事务和内联消息的API.
+    * [Builtin Types](API/Types.md) - 指定typedefs和别名.
