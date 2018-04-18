@@ -87,24 +87,29 @@ if (account_api::get(test1_balance))
 ### 数据成员说明文档
 
 <h5 id="account">account</h5>
-* account_name eosio::account::account_balance::account   
-所查余额的账户名称
+> account_name eosio::account::account_balance::account   
 
-<h5 id="eos_balance"> eos_balance</h5>
-* asset eosio::account::account_balance::eos_balance   
-账户的余额
+        所查余额的账户名称
 
-<h5 id="last_unstaking_time"> last_unstaking_time   </h5>   
-* time eosio::account::account_balance::last_unstaking_time   
-账户正在取消抵押的余额
+<h5 id="eos_balance">eos_balance</h5>
+> asset eosio::account::account_balance::eos_balance   
+        
+     账户的余额
 
-<h5 id="staked_balance"> staked_balance</h5>
-* asset eosio::account::account_balance::staked_balance   
-账户的抵押余额
+<h5 id="last_unstaking_time">last_unstaking_time</h5>   
+>time eosio::account::account_balance::last_unstaking_time   
 
-<h5 id="unstaking_balance"> unstaking_balance</h5>
-asset eosio::account::account_balance::unstaking_balance   
-这个账户最后取消抵押余额的时间
+    账户正在取消抵押的余额
+
+<h5 id="staked_balance">staked_balance</h5>
+> asset eosio::account::account_balance::staked_balance   
+
+    账户的抵押余额
+
+<h5 id="unstaking_balance">unstaking_balance</h5>
+> asset eosio::account::account_balance::unstaking_balance   
+
+    这个账户最后取消抵押余额的时间
 
 ### 源文档
 <h5> contracts/eosiolib/account.hpp</h5>
